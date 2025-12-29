@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sunny Coffee</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body class="bg-amber-50 text-amber-950">
+
+  <!-- Navbar -->
+  <header class="bg-amber-900 text-amber-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <h1 class="text-2xl font-bold">Bean & Brew</h1>
+      <nav class="space-x-6 hidden md:block">
+        <a href="#home" class="hover:text-amber-200">Home</a>
+        <a href="#menu" class="hover:text-amber-200">Menu</a>
+        <a href="#about" class="hover:text-amber-200">About</a>
+        <a href="#contact" class="hover:text-amber-200">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-[url('https://images.unsplash.com/photo-1509042239860-f550ce710b93')] bg-cover bg-center">
+    <div class="bg-black/50">
+      <div class="max-w-7xl mx-auto px-6 py-32 text-center text-white">
+        <h2 class="text-5xl mb-6">Fresh Coffee. Cozy Vibes.</h2>
+        <p class="max-w-2xl mx-auto mb-8 text-lg">Start your day with handcrafted coffee made from the finest beans, brewed with passion.</p>
+        <a href="#menu" class="bg-amber-700 hover:bg-amber-600 px-8 py-3 rounded-full text-lg">View Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="max-w-7xl mx-auto px-6 py-20">
+    <h2 class="text-4xl text-center mb-12">Our Menu</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-2xl shadow p-6 text-center">
+        <h3 class="text-2xl mb-2">Espresso</h3>
+        <p>Rich and bold single-shot espresso.</p>
+        <span class="block mt-4 font-semibold">$3.00</span>
+      </div>
+      <div class="bg-white rounded-2xl shadow p-6 text-center">
+        <h3 class="text-2xl mb-2">Latte</h3>
+        <p>Smooth espresso with steamed milk.</p>
+        <span class="block mt-4 font-semibold">$4.50</span>
+      </div>
+      <div class="bg-white rounded-2xl shadow p-6 text-center">
+        <h3 class="text-2xl mb-2">Cappuccino</h3>
+        <p>Perfect balance of espresso and foam.</p>
+        <span class="block mt-4 font-semibold">$4.00</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-amber-100">
+    <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-4xl mb-6">About Us</h2>
+        <p class="mb-4">Bean & Brew is a neighborhood coffee shop dedicated to quality, comfort, and community.</p>
+        <p>We source ethically grown beans and roast them to perfection, creating unforgettable coffee experiences.</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="Coffee Shop" class="rounded-2xl shadow" />
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="max-w-7xl mx-auto px-6 py-20">
+    <h2 class="text-4xl text-center mb-12">Contact Us</h2>
+    <div class="max-w-xl mx-auto bg-white rounded-2xl shadow p-8">
+      <form class="space-y-6">
+        <input type="text" placeholder="Your Name" class="w-full border p-3 rounded" />
+        <input type="email" placeholder="Your Email" class="w-full border p-3 rounded" />
+        <textarea placeholder="Your Message" class="w-full border p-3 rounded h-32"></textarea>
+        <button class="w-full bg-amber-800 text-white py-3 rounded hover:bg-amber-700">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-amber-900 text-amber-100 text-center py-6">
+    <p>© 2025 Bean & Brew Coffee. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
